@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logic-Films</title>
+  <link rel="shortcut icon" href="./assets/images/lf.png" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- External Index CSS -->
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Additional inline CSS for custom modifications -->
+  <style>
+    /* Increase logo size */
+    .navbar-brand img {
+      height: 60px;
+    }
+    /* Style for YouTube thumbnail play icon overlay */
+    .thumbnail-container {
+      position: relative;
+      display: inline-block;
+    }
+    .thumbnail-container img {
+      display: block;
+    }
+    .play-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.9);
+      pointer-events: none;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top" data-aos="fade-down" data-aos-duration="300">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo2.png" alt="Logic Films Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- ms-auto pushes these items to the right -->
+        <ul class="navbar-nav align-items-center gap-3 ms-auto">
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item d-flex align-items-center" data-aos="fade-right" data-aos-duration="300">
+            <a class="social-icon" href="https://www.instagram.com/deejayjeanp" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class="social-icon" href="https://facebook.com/logicFilms" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a class="social-icon" href="https://www.youtube.com/@Logic-Films" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a class="social-icon" href="https://www.tiktok.com/@deejayjeanp" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a class="social-icon" href="https://discord.gg/BaaqCYF" target="_blank"><i class="fab fa-discord"></i></a>
+          </li>
+          <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+            <button class="contact-btn ms-3" onclick="window.location.href='contactus.html';">Contact Us</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section id="hero" data-aos="fade" data-aos-duration="300">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="assets/videos/header_high_quality_video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+      <img src="assets/images/wm2.png" alt="Overlay Logo" class="overlay-logo">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="300">
+        Welcome to Logic Films: elevating your brand with cinematic storytelling. We specialize in crafting immersive cinematic experiences within popular video games like Grand Theft Auto V and Assetto Corsa. With over a decade of expertise, we bring your vision to life.
+      </div>
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up" data-aos-duration="300">
+    <div class="container">
+      <h2 data-aos="fade-right" data-aos-duration="300">MORE ABOUT LOGIC FILMS</h2>
+      <div class="row">
+        <!-- YouTube Shorts Carousel -->
+        <div class="col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="300">
+          <div class="shorts-embed-container">
+            <div id="shortsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="ratio-9x16">
+                    <iframe src="https://www.youtube.com/embed/I1BOIMM9BK0?autoplay=0" title="YouTube Short 1" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ratio-9x16">
+                    <iframe src="https://www.youtube.com/embed/Xz92xATrSnU?autoplay=0" title="YouTube Short 2" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ratio-9x16">
+                    <iframe src="https://www.youtube.com/embed/J9PtJ2FtS1s?autoplay=0" title="YouTube Short 3" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ratio-9x16">
+                    <iframe src="https://www.youtube.com/embed/YkHMf-RtB0o?autoplay=0" title="YouTube Short 4" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="ratio-9x16">
+                    <iframe src="https://www.youtube.com/embed/2axbrL1KPKg?autoplay=0" title="YouTube Short 5" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#shortsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#shortsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          
+          <!-- YouTube Thumbnails with Play Icon Overlay -->
+          <div class="carousel-thumbnails" data-aos="fade-up" data-aos-duration="300">
+            <div class="thumbnail-container">
+              <img data-video-id="I1BOIMM9BK0" src="https://img.youtube.com/vi/I1BOIMM9BK0/hqdefault.jpg" alt="Thumb 1">
+              <div class="play-overlay"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="thumbnail-container">
+              <img data-video-id="Xz92xATrSnU" src="https://img.youtube.com/vi/Xz92xATrSnU/hqdefault.jpg" alt="Thumb 2">
+              <div class="play-overlay"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="thumbnail-container">
+              <img data-video-id="J9PtJ2FtS1s" src="https://img.youtube.com/vi/J9PtJ2FtS1s/hqdefault.jpg" alt="Thumb 3">
+              <div class="play-overlay"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="thumbnail-container">
+              <img data-video-id="YkHMf-RtB0o" src="https://img.youtube.com/vi/YkHMf-RtB0o/hqdefault.jpg" alt="Thumb 4">
+              <div class="play-overlay"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="thumbnail-container">
+              <img data-video-id="2axbrL1KPKg" src="https://img.youtube.com/vi/2axbrL1KPKg/hqdefault.jpg" alt="Thumb 5">
+              <div class="play-overlay"><i class="fas fa-play"></i></div>
+            </div>
+          </div>
+        </div>
+        <!-- About Text -->
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="300">
+          <div class="about-text-box">
+            <p>
+              With over a decade of experience and millions of views across our social platforms, we've become the experts in creating awe-inspiring cinematic experiences. Our expertise has expanded into new spaces, including sports spots on Rockstar Games' North office in Edinburgh.
+            </p>
+            <p>
+              At Logic Films, we know that showcasing your products or services in a cinematic manner is key to capturing your audience’s hearts and awareness. That’s why we specialize in creating high-quality cinematic videos that capture the essence and brand of your product.
+            </p>
+            <p>
+              For example, when we showcased Rockstar Games’ new vehicles in GTA V, it led to an increase in car sales within the game. By leveraging our cinematic production and storytelling, we can help you achieve similar results for your brand.
+            </p>
+            <p>
+              We work together with you on every step of the production process. From concept to outline, you can trust that we'll deliver a stunning 4K video that exceeds all expectations and leaves a lasting impression on your target audience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section with Custom Styled Form -->
+  <section id="contact" data-aos="fade-up" data-aos-duration="300">
+    <div class="container">
+      <div class="row">
+        <!-- Heading & Intro -->
+        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="300">
+          <h2>CONTACT US</h2>
+          <p>
+            Interested in working together? Fill out the form below and we’ll be in touch shortly.
+          </p>
+        </div>
+        <!-- Custom Form -->
+        <div class="col-lg-7" data-aos="fade-left" data-aos-duration="300">
+          <form id="contact-form" method="POST">
+            <!-- Name -->
+            <div class="mb-3">
+              <label for="name" class="form-label">Name: (required)</label>
+              <input type="text" class="form-control" id="name" name="entry.2005620554" required />
+            </div>
+            <!-- Email -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email: (required)</label>
+              <input type="email" class="form-control" id="email" name="emailAddress" required />
+            </div>
+            <!-- Discord Username -->
+            <div class="mb-3">
+              <label for="discord" class="form-label">Discord Username: (required)</label>
+              <input type="text" class="form-control" id="discord" name="entry.1721774379" required />
+            </div>
+            <!-- Video should be shot in -->
+            <div class="mb-3">
+              <label for="game" class="form-label">What game the video should be shot in:</label>
+              <select class="form-select" id="game" name="entry.1065046570" required>
+                <option value="">Choose</option>
+                <option value="GTA V/FiveM">GTA V/FiveM</option>
+                <option value="Assetto Corsa">Assetto Corsa</option>
+              </select>
+            </div>
+            <!-- Purpose of the video -->
+            <div class="mb-3">
+              <label for="purpose" class="form-label">Purpose of the video: (required)</label>
+              <textarea class="form-control" id="purpose" name="entry.1166974658" rows="2" placeholder="Examples: server trailer, showcase of specific cars, interior (MLO) showcase, other - custom." required></textarea>
+            </div>
+            <!-- What would you like your video to show -->
+            <div class="mb-3">
+              <label for="videoShow" class="form-label">What would you like your video to show? (required)</label>
+              <textarea class="form-control" id="videoShow" name="entry.521358945" rows="4" placeholder="Your global idea of the video, any specific requests, or requirements." required></textarea>
+            </div>
+            <!-- Deadlines -->
+            <div class="mb-3">
+              <label for="deadlines" class="form-label">Do you have any deadlines? (required)</label>
+              <input type="text" class="form-control" id="deadlines" name="entry.1020236183" required />
+            </div>
+            <!-- Examples of other videos -->
+            <div class="mb-3">
+              <label for="examples" class="form-label">Any examples of other videos you'd like your video to be like:</label>
+              <input type="text" class="form-control" id="examples" name="entry.773584330" placeholder="Link any videos here" />
+            </div>
+            <!-- Anything you'd like to add -->
+            <div class="mb-3">
+              <label for="comments" class="form-label">Anything you'd like to add?</label>
+              <textarea class="form-control" id="comments" name="entry.839337160" rows="3" placeholder="Additional comments"></textarea>
+            </div>
+            <!-- SEND Button -->
+            <button type="submit" class="btn-send btn">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Bootstrap Modal for Success Message -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Success!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Thank you for contacting us! We'll be in touch shortly.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap Modal for Error Message -->
+  <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="errorModalLabel">Already Submitted</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          You've already submitted response please wait we will get in touch shortly.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Testimonials Section -->
+  <section class="review my-5">
+    <div class="container-fluid">
+      <div class="row review_info">
+        <div class="col-12 text-center">
+          <h1 class="review_title" data-aos="fade-up" data-aos-duration="300">TESTIMONIALS</h1>
+          <div class="banner">
+            <div class="banner-text-container" data-text=" GROW IT • BUILD IT • SUCK IT • DREAM IT • GROW IT • BUILD IT • SUCK IT • DREAM IT • GROW IT • BUILD IT • SUCK IT • DREAM IT •">
+              <div class="banner-text"> GROW IT • </div>
+              <div class="banner-text"> BUILD IT • </div>
+              <div class="banner-text"> SUCK IT • </div>
+              <div class="banner-text"> DREAM IT • </div>
+              <div class="banner-text"> GROW IT • </div>
+              <div class="banner-text"> BUILD IT • </div>
+              <div class="banner-text"> SUCK IT • </div>
+              <div class="banner-text"> DREAM IT • </div>
+              <div class="banner-text"> GROW IT • </div>
+              <div class="banner-text"> BUILD IT • </div>
+              <div class="banner-text"> SUCK IT • </div>
+              <div class="banner-text"> DREAM IT • </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer data-aos="fade-up" data-aos-duration="300">
+    <div class="container">
+      <img src="assets/images/wm2.png" alt="Footer Logo">
+      <div class="my-3">
+        <a class="social-icon" href="https://www.instagram.com/deejayjeanp" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social-icon" href="https://facebook.com/logicFilms" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="social-icon" href="https://www.youtube.com/@Logic-Films" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a class="social-icon" href="https://www.tiktok.com/@deejayjeanp" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a class="social-icon" href="https://discord.gg/BaaqCYF" target="_blank"><i class="fab fa-discord"></i></a>
+      </div>
+      <button class="tos-btn">Terms of Service</button>
+    </div>
+  </footer>
+  
+  <!-- External JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  
+  <!-- Inline JavaScript to handle form submission -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault(); // Prevent default submission
+      
+      const form = this;
+      const formData = new FormData(form);
+      
+      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9tVxRIFcveP46HgwaUZIX4qtsxvjgVB0w8UssLBSurkdliw/formResponse", {
+        method: "POST",
+        mode: "no-cors",
+        body: formData
+      }).then(response => {
+        // In no-cors mode the response is opaque.
+        // Assume success if no error is thrown.
+        form.reset();
+        var successModal = new bootstrap.Modal(document.getElementById("successModal"));
+        successModal.show();
+      }).catch(error => {
+        // If there's an error, assume the user has already submitted.
+        form.reset();
+        var errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+        errorModal.show();
+      });
+    });
+  </script>
+</body>
+</html>

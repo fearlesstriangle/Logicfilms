@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Logic Films | Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/lf.png" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <!-- AOS CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- External Portfolio CSS -->
+  <link rel="stylesheet" href="css/portfolio.css">
+  <style>
+    /* Remove any extra gap above video grid */
+    #videoGrid {
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .navbar-brand img {
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top" data-aos="fade-down" data-aos-duration="300">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo2.png" alt="Logic Films Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav align-items-center gap-3 ms-auto">
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item d-flex align-items-center" data-aos="fade-right" data-aos-duration="300">
+              <a class="social-icon" href="https://www.instagram.com/deejayjeanp" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a class="social-icon" href="https://facebook.com/logicFilms" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a class="social-icon" href="https://www.youtube.com/@Logic-Films" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a class="social-icon" href="https://www.tiktok.com/@deejayjeanp" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a class="social-icon" href="https://discord.gg/BaaqCYF" target="_blank"><i class="fab fa-discord"></i></a>
+            </li>
+            <li class="nav-item" data-aos="fade-right" data-aos-duration="300">
+              <button class="contact-btn ms-3" onclick="window.location.href='contactus.html';">Contact Us</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Portfolio Banner -->
+      <section id="portfolioBanner" data-aos="fade" data-aos-duration="300"></section>
+
+      <!-- Filter Links -->
+      <section id="filterLinks" data-aos="fade-up" data-aos-duration="300">
+        <div class="container">
+          <a class="filter-btn" data-filter="all">All</a>
+          <a class="filter-btn" data-filter="cinematic">Cinematic Films</a>
+          <a class="filter-btn" data-filter="car">Car Showcases</a>
+          <!-- Roleplay filter removed -->
+          <a class="filter-btn" data-filter="shorts">Shorts</a>
+        </div>
+      </section>
+
+      <!-- Video Grid (All Videos including Shorts) -->
+      <section id="videoGrid" data-aos="fade-up" data-aos-duration="300">
+        <div class="container">
+          <div class="row" id="videoContainer">
+            <!-- Original video items from your first input -->
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="y-tIKUt3QyA">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/y-tIKUt3QyA/hqdefault.jpg" alt="Logic Films | Cinematic Showcase – Part 1">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films | Cinematic Showcase – Part 1</h4>
+              <p class="video-desc">Experience stunning visuals and immersive cinematic storytelling in this first installment of our Cinematic Showcase series.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="rvZ8vvOL3gQ">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/rvZ8vvOL3gQ/hqdefault.jpg" alt="Logic Films | Cinematic Showcase – Part 2">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films | Cinematic Showcase – Part 2</h4>
+              <p class="video-desc">A breathtaking display of cinematic excellence capturing vibrant details and dramatic moments.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="R4cjr7sgUWE">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/R4cjr7sgUWE/hqdefault.jpg" alt="Logic Films | Cinematic Showcase – Part 3">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films | Cinematic Showcase – Part 3</h4>
+              <p class="video-desc">Immerse yourself in a creative blend of narrative and visual artistry in this cinematic masterpiece.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="Kgfq31IRm3E">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/Kgfq31IRm3E/hqdefault.jpg" alt="Logic Films – Cinematic Vehicle Reveal">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films – Cinematic Vehicle Reveal</h4>
+              <p class="video-desc">Behold a captivating reveal of new vehicles presented with the cinematic flair that defines Logic Films.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="zH37dpqQU78">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/zH37dpqQU78/hqdefault.jpg" alt="GTA 5 – Roleplay Highlights">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">GTA 5 – Roleplay Highlights</h4>
+              <p class="video-desc">Immerse yourself in dynamic roleplay moments in GTA 5 with cinematic production quality.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="RTdhEmCeQng">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/RTdhEmCeQng/hqdefault.jpg" alt="GTA 5 – Like You've NEVER Seen Before">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">GTA 5 – Like You've NEVER Seen Before</h4>
+              <p class="video-desc">Discover a revolutionary cinematic take on GTA 5 showcasing unseen angles and epic moments.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="BFmDyfi18ag">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/BFmDyfi18ag/hqdefault.jpg" alt="Logic Films – Behind the Scenes: Roleplay Edition">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films – Behind the Scenes: Roleplay Edition</h4>
+              <p class="video-desc">Get an exclusive behind-the-scenes look at the making of our immersive roleplay cinematic experience.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="OocMDrNxIto">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/OocMDrNxIto/hqdefault.jpg" alt="PurpleRP – Gameplay Launch Trailer | FiveM">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">PurpleRP – Gameplay Launch Trailer | FiveM</h4>
+              <p class="video-desc">Watch the official launch trailer for PurpleRP on FiveM, showcasing immersive gameplay and dynamic roleplay action.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="Zi2RpZWhXWk">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/Zi2RpZWhXWk/hqdefault.jpg" alt="GTA 5 – 'The Pickup' (Cinematic Film using Rockstar Editor)">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">GTA 5 – 'The Pickup' (Cinematic Film using Rockstar Editor)</h4>
+              <p class="video-desc">A cinematic retelling of the iconic 'The Pickup' sequence in GTA 5, crafted with Rockstar Editor’s visual finesse.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="I67yighW480">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/I67yighW480/hqdefault.jpg" alt="Logic Films | New Cinematic Showcase – Part 4">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Logic Films | New Cinematic Showcase – Part 4</h4>
+              <p class="video-desc">Experience our latest cinematic vision with stunning visuals and creative storytelling.</p>
+            </div>
+
+            <!-- ============================================================
+                 NEW VIDEO ITEMS ADDED BELOW
+                 ============================================================ -->
+
+            <!-- NEW CAR SHOWCASEs VIDEOS (from your list) -->
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="4UhwiOsJCJ0">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/4UhwiOsJCJ0/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - 4UhwiOsJCJ0</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="NMbOzGh0H7k">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/NMbOzGh0H7k/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - NMbOzGh0H7k</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <!-- (Add the remaining car video items following the same structure) -->
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="nw65SiJ_ONA">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/nw65SiJ_ONA/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - nw65SiJ_ONA</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="WFCic2218-g">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/WFCic2218-g/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - WFCic2218-g</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="qqCnq2InjNA">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/qqCnq2InjNA/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - qqCnq2InjNA</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="z8XTX9Y_tAE">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/z8XTX9Y_tAE/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - z8XTX9Y_tAE</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="oejBi05VSjY">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/oejBi05VSjY/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - oejBi05VSjY</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="Xz92xATrSnU">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/Xz92xATrSnU/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - Xz92xATrSnU</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="k4PVAMYMagk">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/k4PVAMYMagk/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - k4PVAMYMagk</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="96Qf-L814lE">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/96Qf-L814lE/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - 96Qf-L814lE</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="J9PtJ2FtS1s">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/J9PtJ2FtS1s/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - J9PtJ2FtS1s</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="6ffc-84xXqo">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/6ffc-84xXqo/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - 6ffc-84xXqo</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="ZeHJi4WemZE">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/ZeHJi4WemZE/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - ZeHJi4WemZE</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="BU__Y4qDjXg">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/BU__Y4qDjXg/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - BU__Y4qDjXg</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="ubctK2Hk0QQ">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/ubctK2Hk0QQ/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - ubctK2Hk0QQ</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="XPtsDtb3bvc">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/XPtsDtb3bvc/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - XPtsDtb3bvc</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="tu3lN4oKwKA">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/tu3lN4oKwKA/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - tu3lN4oKwKA</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="oOdLYZXdK7M">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/oOdLYZXdK7M/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - oOdLYZXdK7M</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="mmZquFdkK08">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/mmZquFdkK08/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - mmZquFdkK08</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="car" data-video-id="zkcM8bAwl3A">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/zkcM8bAwl3A/hqdefault.jpg" alt="Car Showcases Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Car Showcases - zkcM8bAwl3A</h4>
+              <p class="video-desc">Description for Car Showcases Video.</p>
+            </div>
+            <!-- (Continue adding any remaining Car Showcases items following the same pattern) -->
+
+            <!-- NEW CINEMATIC VIDEOS (from your list) -->
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="I67yighW480">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/I67yighW480/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - I67yighW480</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="5Li5ytBfBiY">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/5Li5ytBfBiY/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - 5Li5ytBfBiY</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="zH37dpqQU78">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/zH37dpqQU78/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - zH37dpqQU78</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="7yMspUFGl2k">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/7yMspUFGl2k/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - 7yMspUFGl2k</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="xHvN9PhXiuU">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/xHvN9PhXiuU/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - xHvN9PhXiuU</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="RTdhEmCeQng">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/RTdhEmCeQng/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - RTdhEmCeQng</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="R4cjr7sgUWE">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/R4cjr7sgUWE/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - R4cjr7sgUWE</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="bMRjPl9xjmc">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/bMRjPl9xjmc/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - bMRjPl9xjmc</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="0qssKJ6Ndoo">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/0qssKJ6Ndoo/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - 0qssKJ6Ndoo</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <div class="col-md-3 video-item" data-cat="cinematic" data-video-id="nj7Xft2QfDU">
+              <div class="video-thumbnail">
+                <img src="https://img.youtube.com/vi/nj7Xft2QfDU/hqdefault.jpg" alt="Cinematic Video">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Cinematic - nj7Xft2QfDU</h4>
+              <p class="video-desc">Description for Cinematic Video.</p>
+            </div>
+            <!-- (Continue adding any remaining Cinematic items if needed) -->
+
+            <!-- ORIGINAL SHORTS VIDEOS (from the first input) -->
+            <div class="col-md-3 video-item" data-cat="shorts" data-video-id="I1BOIMM9BK0">
+              <div class="video-thumbnail" style="width: 50%; margin: auto; aspect-ratio: 9/16; overflow: hidden;">
+                <img src="https://img.youtube.com/vi/I1BOIMM9BK0/hqdefault.jpg" alt="Short Video" style="width:100%; height:100%; object-fit: cover;">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Short Video</h4>
+            </div>
+            <div class="col-md-3 video-item" data-cat="shorts" data-video-id="Xz92xATrSnU">
+              <div class="video-thumbnail" style="width: 50%; margin: auto; aspect-ratio: 9/16; overflow: hidden;">
+                <img src="https://img.youtube.com/vi/Xz92xATrSnU/hqdefault.jpg" alt="Short Video" style="width:100%; height:100%; object-fit: cover;">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Short Video</h4>
+            </div>
+            <div class="col-md-3 video-item" data-cat="shorts" data-video-id="J9PtJ2FtS1s">
+              <div class="video-thumbnail" style="width: 50%; margin: auto; aspect-ratio: 9/16; overflow: hidden;">
+                <img src="https://img.youtube.com/vi/J9PtJ2FtS1s/hqdefault.jpg" alt="Short Video" style="width:100%; height:100%; object-fit: cover;">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Short Video</h4>
+            </div>
+            <div class="col-md-3 video-item" data-cat="shorts" data-video-id="YkHMf-RtB0o">
+              <div class="video-thumbnail" style="width: 50%; margin: auto; aspect-ratio: 9/16; overflow: hidden;">
+                <img src="https://img.youtube.com/vi/YkHMf-RtB0o/hqdefault.jpg" alt="Short Video" style="width:100%; height:100%; object-fit: cover;">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Short Video</h4>
+            </div>
+            <div class="col-md-3 video-item" data-cat="shorts" data-video-id="2axbrL1KPKg">
+              <div class="video-thumbnail" style="width: 50%; margin: auto; aspect-ratio: 9/16; overflow: hidden;">
+                <img src="https://img.youtube.com/vi/2axbrL1KPKg/hqdefault.jpg" alt="Short Video" style="width:100%; height:100%; object-fit: cover;">
+                <i class="fas fa-play play-icon"></i>
+              </div>
+              <h4 class="video-title">Short Video</h4>
+            </div>
+            <!-- End of Shorts -->
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Video Modal (Built-in website player) -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-body p-0">
+            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="ratio ratio-16x9">
+              <iframe id="modalVideo" src="" title="Video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer data-aos="fade-up" data-aos-duration="300">
+      <div class="container">
+        <img src="assets/images/wm2.png" alt="Footer Logo">
+        <div class="my-3">
+          <a class="social-icon" href="https://www.instagram.com/deejayjeanp" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social-icon" href="https://facebook.com/logicFilms" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a class="social-icon" href="https://www.youtube.com/@Logic-Films" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="social-icon" href="https://www.tiktok.com/@deejayjeanp" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a class="social-icon" href="https://discord.gg/BaaqCYF" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+        </div>
+        <button class="tos-btn">Terms of Service</button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- External JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.0/aos.js"></script>
+  <!-- External Portfolio JS -->
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
