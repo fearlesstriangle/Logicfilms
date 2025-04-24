@@ -203,3 +203,27 @@ document.addEventListener("DOMContentLoaded", async () => {
   bannerContainer.innerHTML += texts;
   bannerContainer.style.animation = "scrollText 20s linear infinite";
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault(); // Prevent default submission
+  
+  const form = this;
+  const formData = new FormData(form);
+  
+  fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9tVxRIFcveP46HgwaUZIX4qtsxvjgVB0w8UssLBSurkdliw/formResponse", {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  }).then(response => {
+    // In no-cors mode the response is opaque.
+    // Assume success if no error is thrown.
+    form.reset();
+    var successModal = new bootstrap.Modal(document.getElementById("successModal"));
+    successModal.show();
+  }).catch(error => {
+    // If there's an error, assume the user has already submitted.
+    form.reset();
+    var errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
+    errorModal.show();
+  });
+});
