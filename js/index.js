@@ -89,7 +89,7 @@ videoButtons.forEach(button => {
 document.addEventListener("DOMContentLoaded", async () => {
   // --- NEW CODE: Fetch first 5 YouTube Shorts IDs from the provided playlist ---
   try {
-    const apiKey = "AIzaSyBTEaIs3SeY2DEqjOgNB8zBdND0h5GHWms";
+    const apiKey = "";
     const playlistId = "PLEmlYxMnrcpUc4lnAwV3HD19hKHoz6Dr4";
     const maxResults = 5;
     const apiUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${playlistId}&key=${apiKey}`;
