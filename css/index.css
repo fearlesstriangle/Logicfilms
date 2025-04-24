@@ -1,0 +1,331 @@
+/* Author : Adarsh Mahadev */
+
+/* Global Typography (Latest Film Standards) */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 2rem; }
+p  { font-size: 1.125rem; }
+
+/* ================================
+   Navbar Styles
+=============================== */
+.navbar-custom {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-custom .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+}
+.navbar-custom .nav-link:hover {
+  color: #000;
+}
+.navbar-custom .social-icon {
+  font-size: 1.25rem;
+  color: #000;
+  margin-left: 0.5rem;
+}
+.navbar-custom .contact-btn {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* ================================
+   Hero Section
+=============================== */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../assets/images/header_BG.png') no-repeat center center;
+  background-size: cover;
+}
+#hero .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#hero .hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#hero .overlay-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 10vh;
+}
+#hero .hero-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-align: center;
+  max-width: 90%;
+  opacity: 0;
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+#hero .hero-text.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ================================
+   About Section
+=============================== */
+#about {
+  position: relative;
+  background: url('../assets/images/aboutus_BG.png') no-repeat center center/cover;
+  color: #FFFFFF;
+  padding: 5rem 0;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+#about .container {
+  position: relative;
+  z-index: 2;
+}
+#about h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.shorts-embed-container {
+  max-width: 320px; 
+  width: 100%;
+  border: 3px solid #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.ratio-9x16 {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+.ratio-9x16::before {
+  content: "";
+  display: block;
+  padding-top: 177.78%;
+}
+.ratio-9x16 iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.carousel-thumbnails img {
+  width: 80px;
+  height: 142px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  object-fit: cover;
+}
+.about-text-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+.about-text-box p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #DDDDDD;
+}
+/* Ensure the carousel items are positioned relative for absolute overlays */
+.carousel-item {
+  position: relative;
+}
+
+/* Style for the overlay play button on carousel slides */
+.carousel-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  z-index: 10;
+  pointer-events: auto; /* Allows click events if needed */
+}
+
+
+/* ================================
+   Contact Section
+=============================== */
+#contact {
+  background-color: #F0F0F0; 
+  color: #000;
+  padding: 4rem 0;
+}
+#contact .form-label {
+  font-weight: 700;
+  color: #000;
+  font-size: 1rem;
+}
+#contact h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+#contact .btn-send {
+  text-transform: uppercase; 
+  background-color: #000;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  color: #FFF;
+  font-size: 1rem;
+}
+#contact input.form-control,
+#contact textarea.form-control {
+  background-color: #FFF;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
+#videoShotInButtons .btn-choice {
+  background-color: #FFF; 
+  color: #000; 
+  font-weight: 700; 
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+#videoShotInButtons .btn-choice.active {
+  background-color: #000 !important;
+  color: #FFF !important;
+}
+
+/* ================================
+   Testimonials Section (Scrolling Banner)
+=============================== */
+#testimonials {
+  background-color: #F5F5F5;
+  color: #333;
+  padding: 4rem 0;
+  overflow: hidden;
+  position: relative;
+}
+#testimonials h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.banner {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.banner-text-container {
+  display: flex;
+  gap: 0rem; /* Adjust spacing between items */
+  animation: scrollText 20s linear infinite; /* Adjust speed */
+  width: max-content;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Duplicate the text content to create a seamless loop */
+.banner-text-container::after {
+  content: attr(data-text);
+  display: flex;
+}
+
+
+/* ================================
+   Footer Section
+=============================== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+footer img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+footer .social-icon {
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+  color: #fff;
+}
+footer .tos-btn {
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  margin-top: 1rem;
+}
+
+/* -----------------------------
+   YouTube Lazy Load Thumbnail Overlay
+----------------------------- */
+.yt-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  z-index: 2;
+}
