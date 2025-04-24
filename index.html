@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Logic-Films</title>
   <link rel="shortcut icon" href="./assets/images/lf.png" type="image/x-icon">
   <!-- Bootstrap 5 CSS -->
@@ -14,34 +14,6 @@
   <!-- External Index CSS -->
   <link rel="stylesheet" href="css/index.css">
   <!-- Additional inline CSS for custom modifications -->
-  <style>
-    /* Increase logo size */
-    .navbar-brand img {
-      height: 60px;
-    }
-    /* Style for YouTube thumbnail play icon overlay */
-    .thumbnail-container {
-      position: relative;
-      display: inline-block;
-    }
-    .thumbnail-container img {
-      display: block;
-    }
-    .play-overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2rem;
-      color: rgba(255, 255, 255, 0.9);
-      pointer-events: none;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.7; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-  </style>
 </head>
 <body>
   <!-- Navbar Section -->
@@ -91,10 +63,27 @@
   </section>
   
   <!-- About Section -->
-  <section id="about" data-aos="fade-up" data-aos-duration="300">
+  <section id="about" data-aos="fade-up" data-aos-duration="800">
     <div class="container">
       <h2 data-aos="fade-right" data-aos-duration="300">MORE ABOUT LOGIC FILMS</h2>
       <div class="row">
+        <!-- About Text -->
+        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="300">
+          <div class="about-text-box">
+            <p>
+              With over a decade of experience and millions of views across our social platforms, we've become the experts in creating awe-inspiring cinematic experiences. Our expertise has expanded into new spaces, including sports spots on Rockstar Games' North office in Edinburgh.
+            </p>
+            <p>
+              At Logic Films, we know that showcasing your products or services in a cinematic manner is key to capturing your audience’s hearts and awareness. That’s why we specialize in creating high-quality cinematic videos that capture the essence and brand of your product.
+            </p>
+            <p>
+              For example, when we showcased Rockstar Games’ new vehicles in GTA V, it led to an increase in car sales within the game. By leveraging our cinematic production and storytelling, we can help you achieve similar results for your brand.
+            </p>
+            <p>
+              We work together with you on every step of the production process. From concept to outline, you can trust that we'll deliver a stunning 4K video that exceeds all expectations and leaves a lasting impression on your target audience.
+            </p>
+          </div>
+        </div>
         <!-- YouTube Shorts Carousel -->
         <div class="col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-duration="300">
           <div class="shorts-embed-container">
@@ -159,23 +148,7 @@
             </div>
           </div>
         </div>
-        <!-- About Text -->
-        <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="300">
-          <div class="about-text-box">
-            <p>
-              With over a decade of experience and millions of views across our social platforms, we've become the experts in creating awe-inspiring cinematic experiences. Our expertise has expanded into new spaces, including sports spots on Rockstar Games' North office in Edinburgh.
-            </p>
-            <p>
-              At Logic Films, we know that showcasing your products or services in a cinematic manner is key to capturing your audience’s hearts and awareness. That’s why we specialize in creating high-quality cinematic videos that capture the essence and brand of your product.
-            </p>
-            <p>
-              For example, when we showcased Rockstar Games’ new vehicles in GTA V, it led to an increase in car sales within the game. By leveraging our cinematic production and storytelling, we can help you achieve similar results for your brand.
-            </p>
-            <p>
-              We work together with you on every step of the production process. From concept to outline, you can trust that we'll deliver a stunning 4K video that exceeds all expectations and leaves a lasting impression on your target audience.
-            </p>
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -334,32 +307,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="js/index.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
-  
-  <!-- Inline JavaScript to handle form submission -->
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function(e) {
-      e.preventDefault(); // Prevent default submission
-      
-      const form = this;
-      const formData = new FormData(form);
-      
-      fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSc9tVxRIFcveP46HgwaUZIX4qtsxvjgVB0w8UssLBSurkdliw/formResponse", {
-        method: "POST",
-        mode: "no-cors",
-        body: formData
-      }).then(response => {
-        // In no-cors mode the response is opaque.
-        // Assume success if no error is thrown.
-        form.reset();
-        var successModal = new bootstrap.Modal(document.getElementById("successModal"));
-        successModal.show();
-      }).catch(error => {
-        // If there's an error, assume the user has already submitted.
-        form.reset();
-        var errorModal = new bootstrap.Modal(document.getElementById("errorModal"));
-        errorModal.show();
-      });
-    });
-  </script>
 </body>
 </html>
